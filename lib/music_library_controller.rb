@@ -59,13 +59,13 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp
 
-    if input == Song.artist
-      print Song.artist
-    end
 
-    Song.all.find{ |input| input == artist}.each_with_index{|song, index|
-      puts "#{index+1}. #{song}"
-    }
+    Artist.find_by_name(input)
+
+
+    # Song.all.find{ |input| input == artist}.each_with_index{|song, index|
+    #   puts "#{index+1}. #{song}"
+    # }
 
   end
 
