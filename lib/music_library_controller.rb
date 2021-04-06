@@ -57,7 +57,7 @@ class MusicLibraryController
     input = ""
     puts " get artist"
     input.gets.chomp
-    
+
   end
 
 end
