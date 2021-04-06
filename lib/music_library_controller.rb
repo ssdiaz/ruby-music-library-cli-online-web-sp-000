@@ -25,7 +25,9 @@ class MusicLibraryController
         when "list songs"
           list_songs
         when "list artists"
+          list_artists
         when "list genres"
+          list_genres
         when "list artist"
         when "list genre"
         when "play song"
@@ -50,6 +52,8 @@ class MusicLibraryController
       puts "#{index+1}. #{genre.name}"
     }
   end
+
+  
 
 end
 # rspec spec/010_music_library_controller_spec.rb
