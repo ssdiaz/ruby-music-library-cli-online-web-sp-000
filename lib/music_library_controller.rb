@@ -82,7 +82,7 @@ require 'pry'
     input = gets.strip.to_i #this is a number int
 
     if list_songs.include?(input)
-      puts "Playing #{song.name} by #{song.artist.name}" if song
+      puts "Playing #{song.name} by #{song.artist.name}" 
     end
   end
 
