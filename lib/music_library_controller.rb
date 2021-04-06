@@ -82,11 +82,11 @@ require 'pry'
     input = gets.strip.to_i #this is a number int
 
     if list_songs.include?(input)
-      puts "Playing #{song.name} by #{song.artist.name}" 
+      puts "Playing #{song.name} by #{song.artist.name}"
       binding.pry
     end
   end
-  
+
 end
 # rspec spec/010_music_library_controller_spec.rb
 # rspec spec/011_music_library_cli_methods_spec.rb
