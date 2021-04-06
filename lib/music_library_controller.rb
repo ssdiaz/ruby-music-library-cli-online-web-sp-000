@@ -79,9 +79,11 @@ require 'pry'
 
   def play_song
     puts "Which song number would you like to play?"
-    #list_songs
     input = gets.strip.to_i #this is a number int
 
+    if list_songs.include?(input)
+      puts "Playing #{song.name} by #{song.artist.name}" if song
+    end
   end
 
 end
