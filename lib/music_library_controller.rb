@@ -81,9 +81,9 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.chomp
 
-    list_songs.find_by_name(input) {|input| input == song.name}
+    list_songs.find_by_name(input)
       puts "Playing #{song.name} by #{song.artist.name}"
-    end
+    
   end
 
 
