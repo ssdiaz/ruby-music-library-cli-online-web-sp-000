@@ -83,6 +83,7 @@ class MusicLibraryController
 
     list_songs.find_by_name(input) {|input|, input == song.name}
       puts "Playing #{song.name} by #{song.artist.name}"
+    end
   end
 
 
