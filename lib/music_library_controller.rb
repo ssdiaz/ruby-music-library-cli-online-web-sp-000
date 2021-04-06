@@ -1,6 +1,4 @@
 class MusicLibraryController
-require 'pry'
-#  attr_reader :apth, :name, :artist
 
   def initialize(path= "./db/mp3s")
     MusicImporter.new(path).import
@@ -91,10 +89,3 @@ end
 # rspec spec/010_music_library_controller_spec.rb
 # rspec spec/011_music_library_cli_methods_spec.rb
 #./bin/musiclibrary
-
-# Which song number would you like to play?
-# 1. Thundercat - For Love I Come - dance
-# 2. Real Estate - Green Aisles - country
-# 3. Real Estate - It's Real - hip-hop
-# 4. Action Bronson - Larry Csonka - indie
-# 5. Jurassic 5 - What's Golden - hip-hop
