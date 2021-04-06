@@ -82,7 +82,8 @@ class MusicLibraryController
     list_songs
     input = gets.chomp #this is a number int
 
-    list_songs.find {|number| number == index}
+    array = list_songs
+    #list_songs.find {|number| number == index}
 
 
     #if song = Song.find_by_name(input)
