@@ -89,7 +89,7 @@ require 'pry'
     if list_songs.include?(input)
       song = Song.all.find{|num| num == input}
     end
-    
+
 
 
     #if song = Song.find_by_name(input)
