@@ -87,13 +87,13 @@ require 'pry'
     #Song.all.find {|input| input == }
 
 
-  if   Song.all.length <= input - 1
+  
 
-    if list_songs.include?(input)
+    if list_songs.include?(input) && Song.all.length <= input - 1
       #song = Song.all.find{|num| num == input}
       puts "Playing #{song.name} by #{song.artist.name}"
     end
-  end
+  
 
 
     #if song = Song.find_by_name(input)
