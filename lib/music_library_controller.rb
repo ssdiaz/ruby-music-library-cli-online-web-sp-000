@@ -77,9 +77,12 @@ class MusicLibraryController
       end
   end
 
-def play_song
+  def play_song
+    puts "Please "
+    input = gets.chomp
 
-end
+    list_songs.find_by_name(input)
+  end
 
 
 
