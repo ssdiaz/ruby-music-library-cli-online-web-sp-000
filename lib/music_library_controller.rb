@@ -78,7 +78,7 @@ class MusicLibraryController
   end
 
   def play_song
-    puts "Please "
+    puts "Which song would you like to play?"
     input = gets.chomp
 
     list_songs.find_by_name(input)
