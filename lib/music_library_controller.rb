@@ -69,7 +69,7 @@ require 'pry'
 
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
-    input = gets.chomp
+    input = gets.strip
 
     if genre = Genre.find_by_name(input)
       genre.songs.sort {|a,b| a.name <=> b.name}.each_with_index{ |song, index|
@@ -80,7 +80,7 @@ require 'pry'
   def play_song
     puts "Which song number would you like to play?"
     list_songs
-    input = gets.chomp.to_i #this is a number int
+    input = gets.strip.to_i #this is a number int
     #input.to_i
 
     #list_songs.find {|number| number == index}
