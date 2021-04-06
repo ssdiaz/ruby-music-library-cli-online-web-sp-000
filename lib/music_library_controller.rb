@@ -29,8 +29,11 @@ class MusicLibraryController
         when "list genres"
           list_genres
         when "list artist"
+          list_songs_by_artist
         when "list genre"
+          list_songs_by_genre
         when "play song"
+          play_song
       end
     end
   end
@@ -64,7 +67,6 @@ class MusicLibraryController
     end
   end
 
-
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets.chomp
@@ -74,6 +76,12 @@ class MusicLibraryController
         puts "#{index+1}. #{song.artist.name} - #{song.name}"}
       end
   end
+
+def play_song
+  
+end
+
+
 
 end
 # rspec spec/010_music_library_controller_spec.rb
