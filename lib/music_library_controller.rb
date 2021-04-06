@@ -19,7 +19,7 @@ require 'pry'
 
     input = ""
     while input != "exit"
-      input = gets.chomp
+      input = gets.strip
 
       case input
         when "list songs"
