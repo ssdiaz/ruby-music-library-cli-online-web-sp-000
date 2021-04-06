@@ -84,7 +84,9 @@ require 'pry'
     input.to_i
 
     #list_songs.find {|number| number == index}
+    #Song.all.find {|input| input == }
 
+    list_songs.split('\n')
 
     #if song = Song.find_by_name(input)
       puts "Playing #{song.name} by #{song.artist.name}"
@@ -92,7 +94,9 @@ require 'pry'
     binding.pry
   end
 
-
+  # Song.all.sort{|a,b| a.name<=>b.name}.each_with_index{|song, index|
+  #   puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+  # }
 
 end
 # rspec spec/010_music_library_controller_spec.rb
