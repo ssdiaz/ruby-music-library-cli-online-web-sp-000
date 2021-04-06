@@ -82,10 +82,9 @@ require 'pry'
     input = gets.strip.to_i #this is a number int
 
     if (1 ... Song.all.length).include?(input) #checking 1 to song length if it includes user's input
-      song = Song.all.sort{|a,b| a.name <=> b.name}[input-1] #creating array and choosing the array index
+      Song.all.sort{|a,b| a.name <=> b.name}[input-1] #creating array and choosing the array index
       puts "Playing #{song.name} by #{song.artist.name}" 
     end
-
   end
 
 end
