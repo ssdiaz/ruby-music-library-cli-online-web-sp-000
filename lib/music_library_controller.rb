@@ -81,30 +81,8 @@ require 'pry'
     puts "Which song number would you like to play?"
     list_songs
     input = gets.strip.to_i #this is a number int
-    #input.to_i
-
-    #list_songs.find {|number| number == index}
-    #Song.all.find {|input| input == }
-
-
-
-
-    if list_songs.include?(input) && Song.all.length <= input - 1
-      #song = Song.all.find{|num| num == input}
-      puts "Playing #{song.name} by #{song.artist.name}"
-    end
-  
-
-
-    #if song = Song.find_by_name(input)
-    #  puts "Playing #{song.name} by #{song.artist.name}" if song
-  #  end
 
   end
-
-  # Song.all.sort{|a,b| a.name<=>b.name}.each_with_index{|song, index|
-  #   puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-  # }
 
 end
 # rspec spec/010_music_library_controller_spec.rb
