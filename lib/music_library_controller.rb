@@ -62,7 +62,7 @@ class MusicLibraryController
     #   puts "#{index+1}. #{song}"
     # }
     array = Song.all.find{ |input| input == artist}
-    array.each_with_index {|song, index|
+    array.each_with_index{|song, index|
       puts "#{index+1}. #{song}"
     }
 
