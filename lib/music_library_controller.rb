@@ -79,7 +79,7 @@ require 'pry'
 
   def play_song
     puts "Which song number would you like to play?"
-    list_songs
+    #list_songs
     input = gets.strip.to_i #this is a number int
 
   end
