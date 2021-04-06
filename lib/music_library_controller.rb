@@ -86,11 +86,14 @@ require 'pry'
     #list_songs.find {|number| number == index}
     #Song.all.find {|input| input == }
 
-    array = list_songs.split("\n")
+    if list_songs.include?(input)
+      song = Song.all.find{|num| num == input}
+    end
+    
 
 
     #if song = Song.find_by_name(input)
-      puts "Playing #{song.name} by #{song.artist.name}"
+      puts "Playing #{song.name} by #{song.artist.name}" if song
   #  end
     binding.pry
   end
