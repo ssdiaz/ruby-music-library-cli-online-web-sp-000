@@ -87,13 +87,14 @@ class MusicLibraryController
     #Song.all.find {|input| input == }
 
     if list_songs.include?(input)
-      song = Song.all.find{|num| num == input}
+      #song = Song.all.find{|num| num == input}
+      puts "Playing #{song.name} by #{song.artist.name}"
     end
 
 
 
     #if song = Song.find_by_name(input)
-      puts "Playing #{song.name} by #{song.artist.name}" if song
+    #  puts "Playing #{song.name} by #{song.artist.name}" if song
   #  end
 
   end
