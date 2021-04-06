@@ -53,7 +53,12 @@ class MusicLibraryController
     }
   end
 
-
+  def list_songs_by_artist
+    input = ""
+    puts " get artist"
+    input.gets.chomp
+    
+  end
 
 end
 # rspec spec/010_music_library_controller_spec.rb
