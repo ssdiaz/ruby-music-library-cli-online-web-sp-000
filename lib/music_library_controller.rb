@@ -80,8 +80,8 @@ require 'pry'
   def play_song
     puts "Which song number would you like to play?"
     list_songs
-    input = gets.chomp #this is a number int
-    input.to_i
+    input = gets.chomp.to_i #this is a number int
+    #input.to_i
 
     #list_songs.find {|number| number == index}
     #Song.all.find {|input| input == }
