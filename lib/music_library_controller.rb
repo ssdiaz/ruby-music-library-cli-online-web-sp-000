@@ -64,6 +64,16 @@ class MusicLibraryController
     end
   end
 
+
+  def list_songs_by_genre
+    puts "promt"
+    input = gets.chomp
+
+    if genre = Genre.find_by_name(input)
+      genre.songs.sort {|a,b| a.name <=> b.name}.each_with_index{ |genre, index| 
+        puts "#{index+1}. #{genre.name}"}
+  end
+
 end
 # rspec spec/010_music_library_controller_spec.rb
 # rspec spec/011_music_library_cli_methods_spec.rb
