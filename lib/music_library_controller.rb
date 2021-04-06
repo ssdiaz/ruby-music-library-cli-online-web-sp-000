@@ -45,6 +45,12 @@ class MusicLibraryController
     }
   end
 
+  def list_genres
+    Genre.all.sort{ |a,b| a.name <=> b.name}.each_with_index{ |genre, index|
+      puts "#{index+1}. #{genre.name}"
+    }
+  end
+
 end
 # rspec spec/010_music_library_controller_spec.rb
 # rspec spec/011_music_library_cli_methods_spec.rb
