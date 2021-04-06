@@ -81,11 +81,9 @@ require 'pry'
     puts "Which song number would you like to play?"
     input = gets.strip.to_i #this is a number int
 
-    if list_songs.include?(input)
-      puts "Playing #{song.name} by #{song.artist.name}"
-      binding.pry
+    if (1 ... Song.all.length).include?(input)
+       puts "Playing #{song.name} by #{song.artist.name}"
     end
-  end
 
 end
 # rspec spec/010_music_library_controller_spec.rb
