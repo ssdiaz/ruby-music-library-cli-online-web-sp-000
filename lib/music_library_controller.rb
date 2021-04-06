@@ -1,5 +1,5 @@
 class MusicLibraryController
-require 'pry'
+
   attr_reader :apth, :name, :artist
 
   def initialize(path= "./db/mp3s")
@@ -95,7 +95,7 @@ require 'pry'
     #if song = Song.find_by_name(input)
       puts "Playing #{song.name} by #{song.artist.name}" if song
   #  end
-    binding.pry
+
   end
 
   # Song.all.sort{|a,b| a.name<=>b.name}.each_with_index{|song, index|
