@@ -1,6 +1,5 @@
 class MusicLibraryController
-  require 'pry'
-  #attr_accessor :path
+
   attr_reader :apth, :name, :artist
 
   def initialize(path= "./db/mp3s")
@@ -62,7 +61,6 @@ class MusicLibraryController
 
     Artist.find_by_name(input).each_with_index {|song, index|
       puts "#{index+1}. #{song}"
-      binding.pry
     }
 
 
